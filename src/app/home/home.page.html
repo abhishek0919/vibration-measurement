@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Vibration Monitor
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div id="map" style="height:40%;"></div>
+</ion-content>
+
+<ion-content>
+  <div class="ion-padding">
+    <p>Monitor</p>
+    <p>{{ data ? data[1]['vibration_reading'] : '-' }}</p>
+  </div>
+</ion-content>
+<ion-list>
+  <ion-list-header>
+    <ion-label>
+      Active Devices
+    </ion-label>
+  </ion-list-header>
+
+
+
+
+
+  <ion-item>
+    <ion-label>Select Device</ion-label>
+    <ion-select placeholder="Select One">
+      <ion-select-option value="coordinates">27.2046° N, 77.4977° E
+      </ion-select-option>
+   
+    </ion-select>
+  </ion-item>
+</ion-list>
+<ion-content>
+  <ion-fab vertical="bottom" horizontal="right" slot="fixed">
+  
+      <ion-fab-button>
+        <ion-icon name="Add Device"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ion-content>
